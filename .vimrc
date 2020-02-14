@@ -1,5 +1,5 @@
 " Encoding
-set encoding=utf8
+set encoding=UTF-8
 
 " Install vim plug if directory ~/.vim/autoload/plug.vim not found
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -12,21 +12,35 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Install COC for intellisense engine for vim
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Install vim-airline plugin
+Plug 'vim-airline/vim-airline'
+
+" Install vim-airline-theme plugin
+Plug 'vim-airline/vim-airline-themes'
 
 " Install gruvbox colorscheme
 Plug 'morhetz/gruvbox'
 
+" Install nerdtree
+Plug 'preservim/nerdtree'
+
+" Install devicons plugins
+Plug 'ryanoasis/vim-devicons'
+
+
 call plug#end()
 
-" Turn on syntax highlighting
-syntax on
+" Common configuration
+source ~/.vimrc.common
 
-" Turn on relative number
-set relativenumber
+" Theme configuration
+source ~/.vimrc.theme
 
-" Setup gruvbox theme as a colorscheme
-colorscheme gruvbox
+" Nerdtree configuration
+source ~/.vimrc.nerdtree
 
 " COC is intelisense for vim enggine
-source ~/.vimrc.coc
+" source ~/.vimrc.coc
+
