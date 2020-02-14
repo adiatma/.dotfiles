@@ -4,6 +4,9 @@ set encoding=utf8
 " Turn on syntax highlighting
 syntax on
 
+" Turn on relativenumber
+set relativenumber
+
 " Install vim plug if directory ~/.vim/autoload/plug.vim not found
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -14,7 +17,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Install COC for intellisense engine for vim
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
