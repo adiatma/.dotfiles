@@ -12,7 +12,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Install COC for intellisense engine for vim
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Install gruvbox colorscheme
 Plug 'morhetz/gruvbox'
@@ -28,4 +28,5 @@ set relativenumber
 " Setup gruvbox theme as a colorscheme
 colorscheme gruvbox
 
-
+" COC is intelisense for vim enggine
+source ~/.vimrc.coc
