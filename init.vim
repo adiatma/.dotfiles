@@ -1,0 +1,20 @@
+" Encoding
+set encoding=utf8
+
+" Turn on syntax highlighting
+syntax on
+
+" Install vim plug if directory ~/.vim/autoload/plug.vim not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+
+" Install COC for intellisense engine for vim
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+call plug#end()
+
