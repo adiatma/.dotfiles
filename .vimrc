@@ -12,7 +12,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Install COC for intellisense engine for vim
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Install vim-airline plugin
 Plug 'vim-airline/vim-airline'
@@ -42,5 +42,5 @@ source ~/.vimrc.theme
 source ~/.vimrc.nerdtree
 
 " COC is intelisense for vim enggine
-" source ~/.vimrc.coc
+source ~/.vimrc.coc
 
