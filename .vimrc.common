@@ -22,3 +22,5 @@ let g:elite_mode=1
 " Enable highlighting of the current line
 set cursorline
 
+" Disable warning
+let g:coc_disable_startup_warning = 1
